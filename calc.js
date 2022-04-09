@@ -28,11 +28,12 @@ reader.question("What would you like to calculate?", function(input){
 	} else if (mathSymbol === "/") {
 		console.log(num1 / num2);
 	} else if (mathSymbol === "sqrt") {
-		console.log(Math.sqrt(num1));
+		console.log("square root of first number:", Math.sqrt(num1));
+		console.log("square root of second number:", Math.sqrt(num2));
 	}
 	//user put invalid operator
 	else {
-		console.log("Not a valid operator");
+		console.log(mathSymbol, "is not a valid operator");
 	}
 
 	// This line closes the connection to the command line interface.
