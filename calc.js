@@ -30,10 +30,11 @@ reader.question("What would you like to calculate?", function(input){
 	} else if (mathSymbol === "sqrt") {
 		console.log(Math.sqrt(num1));
 	}
+	//user put invalid operator
 	else {
 		console.log("Not a valid operator");
 	}
-	
+
 	// This line closes the connection to the command line interface.
 	reader.close()
 
